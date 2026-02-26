@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PC Pemuda Muhammadiyah Cikoneng</title>
 
-<!-- Google Font Elegant -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<!-- Font Mirip Core Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     background: linear-gradient(-45deg, #004e92, #00c6ff, #007a3d, #00b894);
     background-size: 300% 300%;
     animation: gradientMove 20s ease infinite;
@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    padding: 120px 20px;
+    padding: 110px 20px;
     opacity: 0;
     transform: translateY(15px);
     animation: fadeSmooth 1.5s ease forwards;
@@ -41,18 +41,19 @@ body {
     }
 }
 
+/* Judul gaya Core Sans */
 .title {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    min-height: 40px;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+    min-height: 38px;
 }
 
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 28px;
+    height: 22px;
     background: white;
     margin-left: 4px;
     animation: blink 0.8s infinite;
@@ -62,38 +63,40 @@ body {
     50% { opacity: 0; }
 }
 
+/* Deskripsi sesuai revisi */
 .description {
-    font-size: 15px;
-    max-width: 550px;
+    font-size: 14px;
+    max-width: 520px;
     margin: auto;
-    line-height: 1.6;
-    opacity: 0.9;
+    line-height: 1.7;
+    opacity: 0.95;
 }
 
 .follow-text {
-    margin-top: 25px;
-    font-size: 15px;
+    margin-top: 22px;
+    font-size: 13px;
     font-weight: 600;
 }
 
 .social-icons {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .social-icons a {
     color: white;
-    font-size: 26px;
+    font-size: 23px;
     margin: 0 12px;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-    transform: translateY(-4px) scale(1.1);
+    transform: translateY(-3px) scale(1.08);
     text-shadow: 0 0 8px rgba(255,255,255,0.7);
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 12px;
     opacity: 0.8;
 }
@@ -109,7 +112,8 @@ footer {
     </div>
 
     <div class="description">
-        Organisasi kepemudaan Islam yang aktif dalam dakwah dan kegiatan sosial 
+        Organisasi kepemudaan Islam yang aktif 
+        dalam dakwah dan kegiatan sosial 
         untuk membangun generasi berkemajuan.
     </div>
 
@@ -121,9 +125,11 @@ footer {
         <a href="https://www.instagram.com/pcpmcikoneng" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
+
         <a href="https://www.tiktok.com/@pcpmcikoneng" target="_blank">
             <i class="fab fa-tiktok"></i>
         </a>
+
         <a href="https://www.facebook.com/profile.php?id=61588376506886" target="_blank">
             <i class="fab fa-facebook"></i>
         </a>
@@ -149,13 +155,13 @@ function typeLetter() {
     if (index < text.length) {
         typedText.innerHTML += text.charAt(index);
         sound.currentTime = 0;
-        sound.play();
+        sound.play().catch(()=>{});
         index++;
-        setTimeout(typeLetter, 80);
+        setTimeout(typeLetter, 65);
     }
 }
 
-setTimeout(typeLetter, 800);
+setTimeout(typeLetter, 700);
 </script>
 
 </body>
