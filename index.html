@@ -1,174 +1,162 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PC Muhammadiyah Cikoneng</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Pemuda Muhammadiyah Cikoneng</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Google Font Elegant -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(-45deg, #004e92, #00c6ff, #007a3d, #00b894);
+    background-size: 300% 300%;
+    animation: gradientMove 20s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    padding: 120px 20px;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeSmooth 1.5s ease forwards;
+}
+
+@keyframes fadeSmooth {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    body {
-      background: #f4f7fb;
-      color: #333;
-    }
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
 
-    header {
-      background: linear-gradient(135deg, #0d6efd, #198754);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 28px;
+    background: white;
+    margin-left: 4px;
+    animation: blink 0.8s infinite;
+}
 
-    header h1 {
-      font-size: 36px;
-      font-weight: 700;
-    }
+@keyframes blink {
+    50% { opacity: 0; }
+}
 
-    header p {
-      margin-top: 15px;
-      font-size: 18px;
-      opacity: 0.9;
-    }
+.description {
+    font-size: 15px;
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: white;
-      color: #0d6efd;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+.follow-text {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
 
-    .btn:hover {
-      background: #0d6efd;
-      color: white;
-    }
+.social-icons {
+    margin-top: 20px;
+}
 
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+.social-icons a {
+    color: white;
+    font-size: 26px;
+    margin: 0 12px;
+    transition: 0.3s ease;
+}
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      margin-top: 30px;
-    }
+.social-icons a:hover {
+    transform: translateY(-4px) scale(1.1);
+    text-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      width: 280px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card i {
-      font-size: 30px;
-      color: #198754;
-      margin-bottom: 15px;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .social-icons {
-      margin-top: 15px;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 10px;
-      font-size: 22px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #0d6efd;
-    }
-
-    @media(max-width: 768px) {
-      .card-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+footer {
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>PCPM Muhammadiyah Cikoneng</h1>
-    <p>Membina Pemuda Islam Berakhlak, Berilmu, dan Bermanfaat</p>
-    <a href="#kegiatan" class="btn">Lihat Kegiatan</a>
-  </header>
+<div class="container">
 
-  <section id="tentang">
-    <h2>Tentang Kami</h2>
-    <p>PCPM Muhammadiyah Cikoneng adalah organisasi kepemudaan yang bergerak di bidang dakwah, sosial, dan pengembangan karakter generasi muda.</p>
-  </section>
-
-  <section id="kegiatan">
-    <h2>Kegiatan Unggulan</h2>
-
-    <div class="card-container">
-      <div class="card">
-        <i class="fas fa-mosque"></i>
-        <h3>Dakwah</h3>
-        <p>Kajian rutin dan pembinaan keislaman untuk pemuda.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-hands-helping"></i>
-        <h3>Sosial</h3>
-        <p>Aksi sosial dan kepedulian terhadap masyarakat sekitar.</p>
-      </div>
-
-      <div class="card">
-        <i class="fas fa-users"></i>
-        <h3>Kepemudaan</h3>
-        <p>Pengembangan karakter dan kepemimpinan generasi muda.</p>
-      </div>
+    <div class="title">
+        <span id="typedText"></span><span class="cursor"></span>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 PCPM Muhammadiyah Cikoneng</p>
+    <div class="description">
+        Organisasi kepemudaan Islam yang aktif dalam dakwah dan kegiatan sosial 
+        untuk membangun generasi berkemajuan.
+    </div>
+
+    <div class="follow-text">
+        Ikuti dan dukung aktivitas kami melalui media sosial
+    </div>
 
     <div class="social-icons">
-      <a href="#" target="https://www.instagram.com/pcpmcikoneng?igsh=MTlzeGh4OXJyNjdyMg=="><i class="fab fa-instagram"></i></a>
-      <a href="#" target="https://www.tiktok.com/@pcpmcikoneng?_r=1&_t=ZS-94C3gsfDSXo"><i class="fab fa-tiktok"></i></a>
-      <a href="#" target="https://www.facebook.com/profile.php?id=61588376506886"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pcpmcikoneng" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@pcpmcikoneng" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61588376506886" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
     </div>
-  </footer>
+
+    <footer>
+        © 2026 PC Pemuda Muhammadiyah Cikoneng
+    </footer>
+
+</div>
+
+<!-- Sound Ketikan -->
+<audio id="typingSound" src="https://www.soundjay.com/mechanical/sounds/keyboard-1.mp3" preload="auto"></audio>
+
+<script>
+const text = "PC Pemuda Muhammadiyah Cikoneng";
+const typedText = document.getElementById("typedText");
+const sound = document.getElementById("typingSound");
+
+let index = 0;
+
+function typeLetter() {
+    if (index < text.length) {
+        typedText.innerHTML += text.charAt(index);
+        sound.currentTime = 0;
+        sound.play();
+        index++;
+        setTimeout(typeLetter, 80);
+    }
+}
+
+setTimeout(typeLetter, 800);
+</script>
 
 </body>
 </html>
-
