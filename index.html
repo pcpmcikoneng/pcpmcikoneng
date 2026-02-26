@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Muhammadiyah Cikoneng</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d6efd, #198754);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: white;
+      color: #0d6efd;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0d6efd;
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card i {
+      font-size: 30px;
+      color: #198754;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 22px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0d6efd;
+    }
+
+    @media(max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PCPM Muhammadiyah Cikoneng</h1>
+    <p>Membina Pemuda Islam Berakhlak, Berilmu, dan Bermanfaat</p>
+    <a href="#kegiatan" class="btn">Lihat Kegiatan</a>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>PCPM Muhammadiyah Cikoneng adalah organisasi kepemudaan yang bergerak di bidang dakwah, sosial, dan pengembangan karakter generasi muda.</p>
+  </section>
+
+  <section id="kegiatan">
+    <h2>Kegiatan Unggulan</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <i class="fas fa-mosque"></i>
+        <h3>Dakwah</h3>
+        <p>Kajian rutin dan pembinaan keislaman untuk pemuda.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Sosial</h3>
+        <p>Aksi sosial dan kepedulian terhadap masyarakat sekitar.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>Kepemudaan</h3>
+        <p>Pengembangan karakter dan kepemimpinan generasi muda.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 PCPM Muhammadiyah Cikoneng</p>
+
+    <div class="social-icons">
+      <a href="#" target="https://www.instagram.com/pcpmcikoneng?igsh=MTlzeGh4OXJyNjdyMg=="><i class="fab fa-instagram"></i></a>
+      <a href="#" target="https://www.tiktok.com/@pcpmcikoneng?_r=1&_t=ZS-94C3gsfDSXo"><i class="fab fa-tiktok"></i></a>
+      <a href="#" target="https://www.facebook.com/profile.php?id=61588376506886"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
