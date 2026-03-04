@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PC Pemuda Muhammadiyah Cikoneng</title>
 
-<!-- Font Mirip Core Sans -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -41,11 +39,9 @@ body {
     }
 }
 
-/* Judul gaya Core Sans */
 .title {
     font-size: 27px;
     font-weight: 700;
-    letter-spacing: 0.5px;
     margin-bottom: 18px;
     min-height: 38px;
 }
@@ -63,7 +59,6 @@ body {
     50% { opacity: 0; }
 }
 
-/* Deskripsi sesuai revisi */
 .description {
     font-size: 14px;
     max-width: 520px;
@@ -84,15 +79,49 @@ body {
 
 .social-icons a {
     color: white;
-    font-size: 23px;
+    font-size: 24px;
     margin: 0 12px;
-    transition: 0.3s ease;
     text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
 }
 
+/* Animasi Bounce */
+@keyframes bounce {
+    0%   { transform: scale(1) translateY(0); }
+    30%  { transform: scale(1.15) translateY(-6px); }
+    50%  { transform: scale(0.95) translateY(0); }
+    70%  { transform: scale(1.05) translateY(-3px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+/* Saat hover */
 .social-icons a:hover {
-    transform: translateY(-3px) scale(1.08);
-    text-shadow: 0 0 8px rgba(255,255,255,0.7);
+    animation: bounce 0.5s ease;
+}
+
+/* Saat ditekan (mobile) */
+.social-icons a:active {
+    transform: scale(0.9);
+}
+
+/* Warna Brand Hover */
+.social-icons a.instagram:hover {
+    background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-icons a.tiktok:hover {
+    color: #25F4EE;
+}
+
+.social-icons a.facebook:hover {
+    color: #1877F2;
+}
+
+.social-icons a.youtube:hover {
+    color: #FF0000;
 }
 
 footer {
@@ -122,16 +151,20 @@ footer {
     </div>
 
     <div class="social-icons">
-        <a href="https://www.instagram.com/pcpmcikoneng" target="_blank">
+        <a href="https://www.instagram.com/pcpmcikoneng" target="_blank" class="instagram">
             <i class="fab fa-instagram"></i>
         </a>
 
-        <a href="https://www.tiktok.com/@pcpmcikoneng" target="_blank">
+        <a href="https://www.tiktok.com/@pcpmcikoneng" target="_blank" class="tiktok">
             <i class="fab fa-tiktok"></i>
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=61588376506886" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=61588376506886" target="_blank" class="facebook">
             <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://youtube.com/@pcpmcikoneng?si=_Dfkgj0HH9mCAE6b" target="_blank" class="youtube">
+            <i class="fab fa-youtube"></i>
         </a>
     </div>
 
@@ -141,7 +174,6 @@ footer {
 
 </div>
 
-<!-- Sound Ketikan -->
 <audio id="typingSound" src="https://www.soundjay.com/mechanical/sounds/keyboard-1.mp3" preload="auto"></audio>
 
 <script>
